@@ -1,19 +1,4 @@
-document.addEventListener('DOMContentLoaded', () => {
-    // Smooth Scrolling for Navigation Links
-    const navLinks = document.querySelectorAll('nav ul li a');
-
-    navLinks.forEach(link => {
-        link.addEventListener('click', (event) => {
-            event.preventDefault();
-            const targetSection = document.querySelector(link.getAttribute('href'));
-            window.scrollTo({
-                top: targetSection.offsetTop,
-                behavior: 'smooth'
-            });
-        });
-    });
-
-    // Dynamic Project Cards with Hover Effects
+// Dynamic Project Cards with Hover Effects
     const projectCards = document.querySelectorAll('.project-card');
 
     projectCards.forEach(card => {
