@@ -53,9 +53,14 @@ nav ul li a:hover {
 #hero {
     background: url("images/bg.png") no-repeat center center/cover;
     color: white;
-    text-align: left;
+    text-align: center;
     padding: 100px 40px;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
 }
 
 #hero h1 {
@@ -64,7 +69,6 @@ nav ul li a:hover {
 }
 
 #hero p {
-    text-align: left;
     font-size: 1.5em;
     margin: 20px 0;
 }
@@ -120,13 +124,16 @@ footer p {
     margin: 0;
 }
 
+/* Responsive Styles */
 @media (max-width: 768px) {
     header nav {
         flex-direction: column;
+        padding: 0 20px;
     }
 
     nav ul {
         flex-direction: column;
+        padding: 0;
     }
 
     nav ul li {
@@ -135,6 +142,7 @@ footer p {
 
     #hero {
         padding: 60px 20px;
+        text-align: center;
     }
 
     #hero h1 {
@@ -143,5 +151,17 @@ footer p {
 
     #hero p {
         font-size: 1.2em;
+    }
+
+    section {
+        padding: 40px 20px;
+    }
+
+    section h2 {
+        font-size: 1.8em;
+    }
+
+    section p {
+        font-size: 1em;
     }
 }
